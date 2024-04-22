@@ -1,0 +1,27 @@
+POST  http://127.0.0.1:8000/login/
+Content-Type: application/json
+
+{"username":"user2","password":"Pass12345"}
+
+
+###
+
+POST http://127.0.0.1:8000/signup/
+Content-Type: application/json
+
+{"username":"user_1","password":"Pass12345","email":"test@test.com"}
+
+###
+
+GET http://127.0.0.1:8000/test_token/
+Content-Type: application/json
+Authorization: Token 115adaafb83fda01bab3fc323ab6041db59b9cb4
+
+{"username":"user5","password":"Pass12345"}
+
+###
+GET http://127.0.0.1:8000/is_superuser/
+Content-Type: application/json
+Authorization: Token 115adaafb83fda01bab3fc323ab6041db59b9cb4
+
+{"username":"user5","password":"Pass12345"}
